@@ -201,5 +201,5 @@ stream = tweepy.Stream(auth=api.auth, listener=stream_listener)
 try:
     stream.userstream(_with='user', replies='all')
 except Exception as e:
-    logging.ERROR('stream_exception: %s' % e)
+    logging.error('stream_exception: %s' % e)
     raise e
