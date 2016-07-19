@@ -31,7 +31,7 @@ DOTS = '...'
 BACKOFF = 0.5 # Initial wait time before attempting to reconnect
 MAX_BACKOFF = 300 # Maximum wait time between connection attempts
 MAX_IMAGE_SIZE = 3072 * 1024 # bytes
-USERNAME = 'slashstock'
+USERNAME = config.twitter['username'] 
 
 YAHOO_URL = 'http://finance.yahoo.com/q?s=%s'  # symbol
 CHART_API = 'http://chart.finance.yahoo.com/z?s=%s&t=%s&q=l&l=off&z=s'  # symbol, time
